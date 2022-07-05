@@ -1,0 +1,249 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    /* box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.5); */
+    box-shadow: 2px 3px 6px rgba(187, 187, 187, 0.5);
+    justify-content: center;
+    padding: 3px;
+  }
+  
+  .header__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* padding: 5px; */
+    
+  }
+  
+  .header__logo {
+    /* height: 30px !important; */
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #B92B27;
+
+  }
+  
+  .header__icons {
+    display: flex;
+    margin: 5px;
+  }
+  
+  .header__icon {
+    padding: 13px;
+    cursor: pointer;
+  }
+  
+  .header__icon:hover {
+    background-color: #eee;
+    border-radius: 5px;
+  }
+  
+  .header__input {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 35px;
+  }
+  
+  .header__input > input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(49, 49, 49);
+  }
+  
+  .header__input > .MuiSvgIcon-root {
+    color: gray;
+  }
+  
+  .header__avatar {
+    cursor: pointer;
+  }
+  .header__rem {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+  }
+  
+  .header__rem > .MuiSvgIcon-root {
+    font-size: xx-large;
+    color: gray;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+  .header__rem > .MuiSvgIcon-root:hover {
+    color: #000;
+  }
+  
+  .header__rem > .MuiButton-root {
+    color: white;
+    background: #222;
+    text-transform: inherit;
+    border-radius: 5px;
+    margin-left: 25px;
+  }
+  
+  .header__rem > .MuiButton-root:hover {
+    color: #222;
+    background: rgb(214, 214, 214);
+  }
+  .add__button > button{
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 7px;
+    background-color: #222;
+    outline: none;
+    border: none;
+    color: lightgray;
+    font-weight: 300;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+ 
+  .add__button > button:hover{
+  color: #222;
+  background: lightgray;
+  }
+
+  .modal__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+  }
+  
+  .modal__title > h5 {
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 30px;
+  }
+  
+  .modal__title > h5:hover {
+    color: #b92b27;
+  }
+  
+  .modal__info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .modal__info > p {
+    margin-left: 10px;
+    font-size: small;
+    color: gray;
+  }
+  
+  .modal__info > .modal__scope {
+    display: flex;
+    align-items: center;
+    color: rgb(98, 98, 98);
+    padding: 4px;
+    margin-left: 15px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 33px;
+    cursor: pointer;
+  }
+
+.modal__scope >  .MuiSvgIcon-root{
+  margin-left: 5px;
+}
+
+.modal__scope > p {
+  margin-left: 4px;
+}
+
+
+
+  
+  .modal__Field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex: 1;
+  }
+  
+  .modal__Field > .modal__fieldLink {
+    color: gray;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .modal__Field > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+  }
+  
+  .modal__buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .modal__buttons > .cancel {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    color: gray;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal__buttons > .cancel:hover {
+    color: red;
+  }
+  
+  .modal__buttons > .add {
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    background-color: #222;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  .modal__buttons > .add:hover {
+    background-color: #eee;
+    color: #222;
+  }
+  
+
+  
+  @media only screen and (max-width: 600px) {
+    .header__logo{
+        font-size: 15px;
+        font-weight: 700;
+    }
+     
+    
+    .header__icons {
+      display: none;
+    }
+  
+    .header__input {
+      display: none;
+    }
+  }
